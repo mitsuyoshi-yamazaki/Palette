@@ -26,7 +26,28 @@ internal final class ViewController: UIViewController {
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     
-    startProcessing() // FixMe: It does NOT assume that it will be called multiple times
+    let originalImage = #imageLiteral(resourceName: "Demo001")
+    let shrinkenImage = originalImage.resize(to: 0.001)
+    let bitmap = shrinkenImage!.bitmapRepresentable!
+
+    print(bitmap)
+    
+    //    let alteredBitmap = bitmap.sorted { (l, r) -> Bool in
+    //      return l < r
+    //    }
+    let alteredBitmap = bitmap
+    print(alteredBitmap)
+    
+    let d = Data.init(alteredBitmap.data)
+    print(d)
+    print(UIImage.init(data: d))
+
+    let alteredImage = UIImage.init(bitmapData: bitmap)
+    
+    imageView.image = alteredImage
+
+    
+//    startProcessing() // FixMe: It does NOT assume that it will be called multiple times
   }
 }
 
@@ -46,11 +67,5 @@ private extension ViewController {
     guard let imageData = image.pngData() else { return nil }
     
     return image
-  }
-}
-
-extension Data {
-  func imageDescription() -> String {
-    return ""
   }
 }

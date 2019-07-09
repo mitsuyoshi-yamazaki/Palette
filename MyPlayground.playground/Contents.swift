@@ -2,6 +2,7 @@
   
 import UIKit
 import PlaygroundSupport
+import Palette
 
 class MyViewController : UIViewController {
   override func viewDidLoad() {
@@ -10,10 +11,12 @@ class MyViewController : UIViewController {
     let imageView = UIImageView.init(frame: view.bounds)
     imageView.contentMode = .scaleAspectFill
     imageView.autoresizingMask = [UIView.AutoresizingMask.flexibleWidth, .flexibleHeight]
-    imageView.image = #imageLiteral(resourceName: "Demo001")
-
+    
+    imageView.image = UIImage.init(named: "Demo001p")
+    
     view.addSubview(imageView)
   }
 }
 // Present the view controller in the Live View window
 PlaygroundPage.current.liveView = MyViewController()
+

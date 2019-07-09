@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Palette
 
 private let refreshInterval = 0.5
 

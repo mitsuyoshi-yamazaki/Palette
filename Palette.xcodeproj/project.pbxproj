@@ -7,22 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C912DE722D475CF00757112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C912DE622D475CF00757112 /* AppDelegate.swift */; };
-		2C912DE922D475CF00757112 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C912DE822D475CF00757112 /* ViewController.swift */; };
-		2C912DEC22D475CF00757112 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C912DEA22D475CF00757112 /* Main.storyboard */; };
-		2C912DEE22D475D100757112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C912DED22D475D100757112 /* Assets.xcassets */; };
-		2C912DF122D475D100757112 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C912DEF22D475D100757112 /* LaunchScreen.storyboard */; };
+		2C912E1422D47EAD00757112 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C912E0C22D47EAC00757112 /* ViewController.swift */; };
+		2C912E1522D47EAD00757112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C912E0D22D47EAC00757112 /* Assets.xcassets */; };
+		2C912E1622D47EAD00757112 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C912E0E22D47EAC00757112 /* LaunchScreen.storyboard */; };
+		2C912E1722D47EAD00757112 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C912E1022D47EAC00757112 /* Main.storyboard */; };
+		2C912E1822D47EAD00757112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C912E1222D47EAC00757112 /* AppDelegate.swift */; };
+		2C912E1922D47EAD00757112 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C912E1322D47EAC00757112 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C912DE322D475CF00757112 /* Palette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palette.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C912DE622D475CF00757112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C912DE822D475CF00757112 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2C912DEB22D475CF00757112 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2C912DED22D475D100757112 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2C912DF022D475D100757112 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2C912DF222D475D100757112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C912DE322D475CF00757112 /* Palette-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Palette-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C912DF822D47C5300757112 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2C912E0C22D47EAC00757112 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C912E0D22D47EAC00757112 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C912E0F22D47EAC00757112 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C912E1122D47EAC00757112 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C912E1222D47EAC00757112 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C912E1322D47EAC00757112 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +41,7 @@
 			isa = PBXGroup;
 			children = (
 				2C912DF822D47C5300757112 /* MyPlayground.playground */,
-				2C912DE522D475CF00757112 /* Palette */,
+				2C912E0B22D47EAC00757112 /* Palette-iOS */,
 				2C912DE422D475CF00757112 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,30 +49,30 @@
 		2C912DE422D475CF00757112 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2C912DE322D475CF00757112 /* Palette.app */,
+				2C912DE322D475CF00757112 /* Palette-iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2C912DE522D475CF00757112 /* Palette */ = {
+		2C912E0B22D47EAC00757112 /* Palette-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				2C912DE622D475CF00757112 /* AppDelegate.swift */,
-				2C912DE822D475CF00757112 /* ViewController.swift */,
-				2C912DEA22D475CF00757112 /* Main.storyboard */,
-				2C912DED22D475D100757112 /* Assets.xcassets */,
-				2C912DEF22D475D100757112 /* LaunchScreen.storyboard */,
-				2C912DF222D475D100757112 /* Info.plist */,
+				2C912E0C22D47EAC00757112 /* ViewController.swift */,
+				2C912E0D22D47EAC00757112 /* Assets.xcassets */,
+				2C912E0E22D47EAC00757112 /* LaunchScreen.storyboard */,
+				2C912E1022D47EAC00757112 /* Main.storyboard */,
+				2C912E1222D47EAC00757112 /* AppDelegate.swift */,
+				2C912E1322D47EAC00757112 /* Info.plist */,
 			);
-			path = Palette;
+			path = "Palette-iOS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2C912DE222D475CF00757112 /* Palette */ = {
+		2C912DE222D475CF00757112 /* Palette-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C912DF522D475D100757112 /* Build configuration list for PBXNativeTarget "Palette" */;
+			buildConfigurationList = 2C912DF522D475D100757112 /* Build configuration list for PBXNativeTarget "Palette-iOS" */;
 			buildPhases = (
 				2C912DDF22D475CF00757112 /* Sources */,
 				2C912DE022D475CF00757112 /* Frameworks */,
@@ -81,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = Palette;
+			name = "Palette-iOS";
 			productName = Palette;
-			productReference = 2C912DE322D475CF00757112 /* Palette.app */;
+			productReference = 2C912DE322D475CF00757112 /* Palette-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2C912DE222D475CF00757112 /* Palette */,
+				2C912DE222D475CF00757112 /* Palette-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -124,9 +125,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C912DF122D475D100757112 /* LaunchScreen.storyboard in Resources */,
-				2C912DEE22D475D100757112 /* Assets.xcassets in Resources */,
-				2C912DEC22D475CF00757112 /* Main.storyboard in Resources */,
+				2C912E1922D47EAD00757112 /* Info.plist in Resources */,
+				2C912E1722D47EAD00757112 /* Main.storyboard in Resources */,
+				2C912E1522D47EAD00757112 /* Assets.xcassets in Resources */,
+				2C912E1622D47EAD00757112 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,28 +139,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C912DE922D475CF00757112 /* ViewController.swift in Sources */,
-				2C912DE722D475CF00757112 /* AppDelegate.swift in Sources */,
+				2C912E1822D47EAD00757112 /* AppDelegate.swift in Sources */,
+				2C912E1422D47EAD00757112 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2C912DEA22D475CF00757112 /* Main.storyboard */ = {
+		2C912E0E22D47EAC00757112 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2C912DEB22D475CF00757112 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2C912DEF22D475D100757112 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2C912DF022D475D100757112 /* Base */,
+				2C912E0F22D47EAC00757112 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2C912E1022D47EAC00757112 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C912E1122D47EAC00757112 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -286,12 +288,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CELB44UPP5;
-				INFOPLIST_FILE = Palette/Info.plist;
+				INFOPLIST_FILE = "Palette-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mitsuyoshi.Palette;
+				PRODUCT_BUNDLE_IDENTIFIER = "mitsuyoshi.Palette-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,12 +306,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CELB44UPP5;
-				INFOPLIST_FILE = Palette/Info.plist;
+				INFOPLIST_FILE = "Palette-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mitsuyoshi.Palette;
+				PRODUCT_BUNDLE_IDENTIFIER = "mitsuyoshi.Palette-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -328,7 +330,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C912DF522D475D100757112 /* Build configuration list for PBXNativeTarget "Palette" */ = {
+		2C912DF522D475D100757112 /* Build configuration list for PBXNativeTarget "Palette-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C912DF622D475D100757112 /* Debug */,

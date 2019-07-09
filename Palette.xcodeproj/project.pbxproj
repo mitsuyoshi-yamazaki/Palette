@@ -22,6 +22,7 @@
 		2C912DED22D475D100757112 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C912DF022D475D100757112 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C912DF222D475D100757112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C912DF822D47C5300757112 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +39,7 @@
 		2C912DDA22D475CF00757112 = {
 			isa = PBXGroup;
 			children = (
+				2C912DF822D47C5300757112 /* MyPlayground.playground */,
 				2C912DE522D475CF00757112 /* Palette */,
 				2C912DE422D475CF00757112 /* Products */,
 			);

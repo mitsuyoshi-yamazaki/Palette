@@ -4,36 +4,45 @@ import UIKit
 import PlaygroundSupport
 import Palette
 
+let originalImage = UIImage.init(named: "Demo001p")!
+let shrinkenImage = originalImage.resize(to: 0.01)!
+
+let png = shrinkenImage.pngData()!
+print(png.count)
+print(originalImage.size)
+
+let bitmap = shrinkenImage.bitmapRepresentable!
+
+let convertedImage = UIImage.init(bitmapData: bitmap)
+
 class MyViewController : UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    setupImageView()
+//    setupPaletteView()
+  }
+  
+  func setupImageView() {
     let imageView = UIImageView.init(frame: view.bounds)
     imageView.contentMode = .scaleAspectFill
     imageView.autoresizingMask = [UIView.AutoresizingMask.flexibleWidth, .flexibleHeight]
-    
-    let originalImage = UIImage.init(named: "Demo001p")!
-    let shrinkenImage = originalImage.resize(to: 0.001)
-    let bitmap = shrinkenImage!.bitmapRepresentable!
-    print(bitmap)
-    
-    let alteredBitmap = bitmap.sorted { (l, r) -> Bool in
-      return l < r
-    }
-    print(alteredBitmap)
-    
-    let d = Data.init(alteredBitmap.data)
-    print(d)
-    print(UIImage.init(data: d))
-    
-    let alteredImage = UIImage.init(bitmapData: alteredBitmap)
-    
-    imageView.image = alteredImage
+    imageView.image = convertedImage
     
     view.addSubview(imageView)
+  }
+  
+  func setupPaletteView() {
+    let paletteView = PaletteView.init(frame: view.bounds)
+    paletteView.autoresizingMask = [UIView.AutoresizingMask.flexibleWidth, .flexibleHeight]
+    view.addSubview(paletteView)
+    
+    paletteView.bitmap = bitmap
   }
 }
 // Present the view controller in the Live View window
 PlaygroundPage.current.liveView = MyViewController()
 
-
+print(bitmap.size)
+print(bitmap.data)
+print(bitmap.data.count)

@@ -14,7 +14,8 @@ private let refreshInterval = 0.5
 internal final class ViewController: UIViewController {
 
   @IBOutlet private weak var imageView: UIImageView!
-  
+  @IBOutlet private weak var paletteView: PaletteView!
+
   private var image: UIImage?
   
   override func viewDidLoad() {
@@ -30,21 +31,23 @@ internal final class ViewController: UIViewController {
     let shrinkenImage = originalImage.resize(to: 0.001)
     let bitmap = shrinkenImage!.bitmapRepresentable!
 
-    print(bitmap)
+    paletteView.bitmap = bitmap
     
-    //    let alteredBitmap = bitmap.sorted { (l, r) -> Bool in
-    //      return l < r
-    //    }
-    let alteredBitmap = bitmap
-    print(alteredBitmap)
-    
-    let d = Data.init(alteredBitmap.data)
-    print(d)
-    print(UIImage.init(data: d))
-
-    let alteredImage = UIImage.init(bitmapData: bitmap)
-    
-    imageView.image = alteredImage
+//    print(bitmap)
+//    
+//    //    let alteredBitmap = bitmap.sorted { (l, r) -> Bool in
+//    //      return l < r
+//    //    }
+//    let alteredBitmap = bitmap
+//    print(alteredBitmap)
+//    
+//    let d = Data.init(alteredBitmap.data)
+//    print(d)
+//    print(UIImage.init(data: d))
+//
+//    let alteredImage = UIImage.init(bitmapData: bitmap)
+//    
+//    imageView.image = alteredImage
 
     
 //    startProcessing() // FixMe: It does NOT assume that it will be called multiple times

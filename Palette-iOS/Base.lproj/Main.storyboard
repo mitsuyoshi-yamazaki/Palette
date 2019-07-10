@@ -18,21 +18,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Demo001" translatesAutoresizingMaskIntoConstraints="NO" id="KQl-V4-fQA">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Demo001" translatesAutoresizingMaskIntoConstraints="NO" id="KQl-V4-fQA">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uQa-Gp-QB0" customClass="PaletteView" customModule="Palette">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KQl-V4-fQA" secondAttribute="trailing" id="0te-hR-z2s"/>
                             <constraint firstItem="KQl-V4-fQA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ESo-UY-a3k"/>
+                            <constraint firstItem="uQa-Gp-QB0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FdA-ch-HKR"/>
                             <constraint firstAttribute="bottom" secondItem="KQl-V4-fQA" secondAttribute="bottom" id="iiu-Bf-jR6"/>
                             <constraint firstItem="KQl-V4-fQA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vEc-tr-0mG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uQa-Gp-QB0" secondAttribute="trailing" id="wON-UY-isY"/>
+                            <constraint firstAttribute="bottom" secondItem="uQa-Gp-QB0" secondAttribute="bottom" id="yYn-Wh-Rqb"/>
+                            <constraint firstItem="uQa-Gp-QB0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zPg-Px-KLs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="KQl-V4-fQA" id="vUQ-dV-gcW"/>
+                        <outlet property="paletteView" destination="uQa-Gp-QB0" id="E9X-QM-17K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

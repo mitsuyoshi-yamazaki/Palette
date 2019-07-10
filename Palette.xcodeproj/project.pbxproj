@@ -18,6 +18,7 @@
 		2C912E2722D4924900757112 /* Palette.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2C912E1F22D4924900757112 /* Palette.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2C912E2D22D4927200757112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C912E2C22D4927200757112 /* Assets.xcassets */; };
 		2C912E2F22D496C100757112 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C912E2E22D496C100757112 /* UIImageExtensions.swift */; };
+		2C912E3122D5B2F100757112 /* PaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C912E3022D5B2F100757112 /* PaletteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		2C912E2222D4924900757112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C912E2C22D4927200757112 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C912E2E22D496C100757112 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		2C912E3022D5B2F100757112 /* PaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				2C912E2C22D4927200757112 /* Assets.xcassets */,
 				2C912E2222D4924900757112 /* Info.plist */,
 				2C912E2E22D496C100757112 /* UIImageExtensions.swift */,
+				2C912E3022D5B2F100757112 /* PaletteView.swift */,
 			);
 			path = Palette;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C912E3122D5B2F100757112 /* PaletteView.swift in Sources */,
 				2C912E2F22D496C100757112 /* UIImageExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
